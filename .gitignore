@@ -1,0 +1,47 @@
+# JetBrains IDE
+.idea/
+
+# Composer dependencies
+/vendor/
+composer.phar
+
+# Environment files
+.env
+.env.backup
+.env.local
+.env.*.local
+
+# PHP specific
+*.log
+.phpunit.result.cache
+
+# Cache and logs
+/var/cache/*
+/var/logs/*
+/logs/*
+!/logs/.gitkeep
+/cache/*
+!/cache/.gitkeep
+
+# Temporary files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# User-specific files
+.php_cs.cache
+.phpcs.xml
+phpunit.xml
+
+# Node modules (if using JS/CSS tools)
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build directories
+/build/
+/dist/
+/public/build/
+/public/hot/
+
