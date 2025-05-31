@@ -10,8 +10,17 @@ $config = require 'config.php';
 // variable para Linux
 //$db    = new Database($config['database'], 'root', 'firstdb2025.');
 
+
 // Variable para Windows
 $db    = new Database($config['database'], 'root', 'password');
-$posts = $db->query('select * from posts')->fetchAll();
+$id = ($_GET['id']);
+
+$query = "select * from posts where id = :id";
+
+//dd($query);
+
+$posts = $db->query($query, ['id' => $id])->fetch();
+
+
 
 dd($posts);
